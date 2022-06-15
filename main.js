@@ -31,10 +31,11 @@ function activateMenuAtCurrentSection(section) {
 }
 
 function showNavOnScroll() {
+  var myNav = document.querySelector('#navigation')
   if (scrollY > 0) {
-    navigation.classList.add('scroll')
+    myNav.classList.add('scroll')
   } else {
-    navigation.classList.remove('scroll')
+    myNav.classList.remove('scroll')
   }
 }
 
